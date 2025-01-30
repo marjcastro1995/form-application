@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Form Builder</h1>
+        </header>
+        <main>
+            <section id="form-creation">
+                <h2>Create a New Form</h2>
+                <input type="text" id="form-title" placeholder="Enter Form Title">
+                <button id="add-text-field">Add Text Field</button>
+                <button id="add-radio-button">Add Radio Button</button>
+                <button id="add-checkbox">Add Checkbox</button>
+                <div id="fields-container"></div>
+                <button id="save-form">Save Form</button>
+            </section>
+
+            <section id="form-list">
+                <h2>Your Forms</h2>
+                <ul id="forms-list"></ul>
+            </section>
+
+            <section id="form-preview" style="display: none;">
+                <h2>Form Preview</h2>
+                <div id="preview-container"></div>
+                <button id="submit-form">Submit</button>
+            </section>
+        </main>
+    </div>
+
+    <!-- Reference the compiled JS file from the "dist" folder -->
+    <script type="module" src="./dist/app.js"></script>
+</body>
+</html>
